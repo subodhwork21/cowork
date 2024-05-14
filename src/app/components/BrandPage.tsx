@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "./Button";
+import Button from "./button";
 
 const BrandPage = () => {
   return (
@@ -33,14 +33,6 @@ const BrandPage = () => {
           ></Image>
         </div>
       </div>
-      <section className="w-full flex flex-col items-center justify-center">
-        <div>
-          <p></p>
-          <p></p>
-          <p></p>
-          <Button content="Explore Spaces" bgcolor="bg-white" />
-        </div>
-      </section>
     </>
   );
 };
