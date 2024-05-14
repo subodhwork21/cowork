@@ -4,7 +4,7 @@ interface btn {
   weight?: string;
 }
 
-const button = ({ content, bgcolor, weight = "font-light" }: btn) => {
+const Button = ({ content, bgcolor, weight = "font-light" }: btn) => {
   return (
     <>
       <button
@@ -18,4 +18,4 @@ const button = ({ content, bgcolor, weight = "font-light" }: btn) => {
   );
 };
 
-export default button;
+export default Button;
