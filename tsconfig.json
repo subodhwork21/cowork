@@ -18,9 +18,9 @@
       }
     ],
     "paths": {
-      // "@/*": ["./src/*"],
       "@/*": [
-        "./*" // -> change the path to what you you want
+        "./*",
+        "./src/*"
       ]
     }
   },
