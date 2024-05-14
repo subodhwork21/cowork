@@ -134,9 +134,9 @@ const page = () => {
                 alt="person1"
               ></Image>
               <p className="text-left">
-                "The 24/7 access and secure facilities have been incredibly
-                convenient for my team's flexible schedules. We love the
-                coworking space!"
+                The 24/7 access and secure facilities have been incredibly
+                convenient for my teams flexible schedules. We love the
+                coworking space
               </p>
               <div className="w-full">
                 <p className="text-center font-bold">Liam Brown</p>
@@ -154,10 +154,10 @@ const page = () => {
                 alt="person1"
               ></Image>
               <p className="text-left">
-                “The aesthetics of Cowork are inspiring. The attention to detail
-                in the design creates an atmosphere that sparks creativity. It's
+                The aesthetics of Cowork are inspiring. The attention to detail
+                in the design creates an atmosphere that sparks creativity. Its
                 a place where ideas flow effortlessly, and collaboration happens
-                organically.”
+                organically.
               </p>
               <div className="w-full">
                 <p className="text-center font-bold">Liam Brown</p>
@@ -175,9 +175,9 @@ const page = () => {
                 alt="person1"
               ></Image>
               <p className="text-left">
-                "As a freelance designer, I was getting tired of working from
+                As a freelance designer, I was getting tired of working from
                 home or coffee shops. The coworking space has provided me with a
-                productive and professional environment to focus on my work."
+                productive and professional environment to focus on my work
               </p>
               <div className="w-full">
                 <p className="text-center font-bold">Michael Thompson</p>
@@ -195,9 +195,9 @@ const page = () => {
                 alt="person1"
               ></Image>
               <p className="text-left">
-                "The coworking space has been a wonderful resource for my team.
+                The coworking space has been a wonderful resource for my team.
                 The open floor plan and dedicated private offices allow us to
-                collaborate and concentrate as needed."
+                collaborate and concentrate as needed.
               </p>
               <div className="w-full">
                 <p className="text-center font-bold">David Wilson</p>
@@ -215,9 +215,9 @@ const page = () => {
                 alt="person1"
               ></Image>
               <p className="text-left">
-                "The flexible membership options and amenities like high-speed
+                The flexible membership options and amenities like high-speed
                 internet, printers, and meeting rooms have made this coworking
-                space a perfect fit for my small business."
+                space a perfect fit for my small business.
               </p>
               <div className="w-full">
                 <p className="text-center font-bold"> Alex Nguyen</p>
