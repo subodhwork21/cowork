@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "./button";
+import Button from "@/app/components/button";
 const HeroPage = () => {
   return (
     <div className="flex flex-row items-center justify-between py-28 px-16">

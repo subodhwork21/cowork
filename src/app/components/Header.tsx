@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Button from "./button";
+import Button from "@/app/components/button";
 
 const Header = () => {
   return (

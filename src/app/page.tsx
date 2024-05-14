@@ -1,8 +1,8 @@
 import React from "react";
-import HeroPage from "./components/hero";
-import BrandPage from "./components/brand";
+import HeroPage from "@/app/components/hero";
+import BrandPage from "@/app/components/brand";
 import Image from "next/image";
-import Button from "./components/button";
+import Button from "@/app/components/button";
 const page = () => {
   return (
     <>

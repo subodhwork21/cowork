@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/app/components/header";
 
 import localFont from "next/font/local";
-import Footer from "./components/footer";
+import Footer from "@/app/components/footer";
 
 // Font files can be colocated inside of `pages`
 const myFont = localFont({ src: "./GeneralSans-Regular.woff2" });
