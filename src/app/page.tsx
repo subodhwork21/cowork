@@ -20,7 +20,7 @@ const page = () => {
             ></Image>
             <p className="text-center text-[24px]">Flexible Spaces</p>
             <p className="text-center">
-              Whether you're a solopreneur, startup, or an established
+              Whether you are a solopreneur, startup, or an established
               enterprise, our flexible office solutions cater to your evolving
               needs.
             </p>
