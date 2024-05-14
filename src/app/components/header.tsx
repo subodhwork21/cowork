@@ -8,7 +8,7 @@ const Header = () => {
       <nav className="flex px-16 py-4  flex-row justify-between items-center">
         <div className="font-extrabold">
           <Link href={"/"}>
-            <Image src="/logo.png" width={120} height={24} alt="log" />
+            <Image src="/Logo.png" width={120} height={24} alt="logo" />
           </Link>
         </div>
         <ul className="flex justify-between flex-row items-center gap-12">
