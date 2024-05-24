@@ -3,6 +3,13 @@ import HeroPage from "@/app/components/hero";
 import BrandPage from "@/app/components/brand";
 import Image from "next/image";
 import Button from "@/app/components/button";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
 const page = () => {
   return (
     <>
@@ -227,6 +234,203 @@ const page = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="px-28 py-16 grid grid-cols-5 gap-16">
+          <div className="col-span-2">
+            <p>Frequently Asked Questions</p>
+            <p className="text-[48px] font-bold leading-[50px] py-8">
+              Your Roadmap to Coworking Clarity
+            </p>
+            <p>
+              Frequently asked questions ordered by popularity. Remember that if
+              the visitor has not committed to the call to action, they may
+              still have questions (doubts) that can be answered.
+            </p>
+          </div>
+          <div className="col-span-3">
+            <Accordion type="single" collapsible>
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="font-bold">
+                  How flexible are Coworks membership plans?
+                </AccordionTrigger>
+                <AccordionContent className="max-w-[400px]">
+                  Frequently asked questions ordered by popularity. Remember
+                  that if the visitor has not committed to the call to action,
+                  they may still have questions (doubts) that can be answered.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-2">
+                <AccordionTrigger className="font-bold">
+                  What kind of events and networking opportunities does Cowork
+                  provide?
+                </AccordionTrigger>
+                <AccordionContent className="max-w-[400px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                  amet quam quo consequatur quod animi deleniti enim quia
+                  debitis qui eligendi nesciunt neque, aliquam dolor! Quidem aut
+                  officia exercitationem temporibus totam saepe corporis vitae.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-3">
+                <AccordionTrigger className="font-bold">
+                  Can I tour the Cowork space before committing to a membership?
+                </AccordionTrigger>
+                <AccordionContent className="max-w-[400px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                  amet quam quo consequatur quod animi deleniti enim quia
+                  debitis qui eligendi nesciunt neque, aliquam dolor! Quidem aut
+                  officia exercitationem temporibus totam saepe corporis vitae.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger className="font-bold">
+                  Is Cowork suitable for remote teams and distributed
+                  workforces?
+                </AccordionTrigger>
+                <AccordionContent className="max-w-[400px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                  amet quam quo consequatur quod animi deleniti enim quia
+                  debitis qui eligendi nesciunt neque, aliquam dolor! Quidem aut
+                  officia exercitationem temporibus totam saepe corporis vitae.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-5">
+                <AccordionTrigger className="font-bold">
+                  What measures does Cowork take for environmental
+                  sustainability?
+                </AccordionTrigger>
+                <AccordionContent className="max-w-[400px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                  amet quam quo consequatur quod animi deleniti enim quia
+                  debitis qui eligendi nesciunt neque, aliquam dolor! Quidem aut
+                  officia exercitationem temporibus totam saepe corporis vitae.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-6">
+                <AccordionTrigger className="font-bold">
+                  Still has questions?
+                </AccordionTrigger>
+                <AccordionContent className="max-w-[400px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                  amet quam quo consequatur quod animi deleniti enim quia
+                  debitis qui eligendi nesciunt neque, aliquam dolor! Quidem aut
+                  officia exercitationem temporibus totam saepe corporis vitae.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
+        </div>
+        <div className="w-full flex flex-col items-center justify-center gap-6 px-28 py-[123px]">
+          <span>-</span>
+          <p className="text-[96px] text-center font-bold leading-[100px]">
+            Seize The Moment – Join Cowork Today!{" "}
+          </p>
+          <p className="text-center text-[13px] max-w-[600px]">
+            Uncover the transformative power of Cowork as echoed by those who
+            have made it their professional haven. This is more than finding a
+            desk; it is discovering a community that fuels your journey to
+            success.
+          </p>
+          <Button content="Claim Your Spot" bgcolor="bg-black" />
+        </div>
+        <div className="max-w-[600px] w-full flex flex-col items-center justify-center gap-4 py-20 text-center">
+          <p className="text-[12px] font-bold">Cowork Chronicles </p>
+          <p className="text-[48px] font-bold leading-[60px]">
+            Insights, Innovation, and Inspiration
+          </p>
+          <p className="text-center text-[13px] max-w-[480px] ">
+            Stay updated on the latest trends in coworking, productivity tips,
+            and success stories that define the Cowork experience.
+          </p>
+        </div>
+
+        <div className="w-full grid grid-cols-3 gap-4 px-16">
+          <div>
+            <Image
+              className="rounded-3xl"
+              src={"/images/laptop.jpg"}
+              alt="Sitting together with laptop"
+              width={416}
+              height={300}
+            ></Image>
+            <div className="mt-6 flex justify-start items-center gap-4 ">
+              <p className="bg-skyBlue font-bold py-[6px] px-[8px] rounded-xl">
+                Trending
+              </p>
+              <p>7 min read</p>
+            </div>
+            <p className="mt-6 text-[24px] font-bold">
+              Navigating the Future: Trends in Modern Coworking Spaces
+            </p>
+            <div className="mt-8 flex justify-start items-center gap-2">
+              <p>Read more</p>
+              <Image
+                src={"/logos/Chevron Right.png"}
+                width={24}
+                height={24}
+                alt="right chevron"
+              ></Image>
+            </div>
+          </div>
+          <div>
+            <Image
+              className="rounded-3xl"
+              src={"/images/laptop2.jpg"}
+              alt="Sitting together with laptop"
+              width={416}
+              height={300}
+            ></Image>
+            <div className="mt-6 flex justify-start items-center gap-4 ">
+              <p className="bg-shinyPink font-bold py-[6px] px-[8px] rounded-xl">
+                Productivity
+              </p>
+              <p>5 min read</p>
+            </div>
+            <p className="mt-6 text-[24px] font-bold">
+              Mastering Productivity: Tips from Cowork High Achievers
+            </p>
+            <div className="mt-8 flex justify-start items-center gap-2">
+              <p>Read more</p>
+              <Image
+                src={"/logos/Chevron Right.png"}
+                width={24}
+                height={24}
+                alt="right chevron"
+              ></Image>
+            </div>
+          </div>
+          <div>
+            <Image
+              className="rounded-3xl"
+              src={"/images/laptop3.jpg"}
+              alt="Sitting together with laptop"
+              width={416}
+              height={300}
+            ></Image>
+            <div className="mt-6 flex justify-start items-center gap-4 ">
+              <p className="bg-lightGreen font-bold py-[6px] px-[8px] rounded-xl">
+                Talk
+              </p>
+              <p>10 min read</p>
+            </div>
+            <p className="mt-6 text-[24px] font-bold">
+              Tech Talk: The Backbone of Cowork Seamless Experience
+            </p>
+            <div className="mt-8 flex justify-start items-center gap-2">
+              <p>Read more</p>
+              <Image
+                src={"/logos/Chevron Right.png"}
+                width={24}
+                height={24}
+                alt="right chevron"
+              ></Image>
+            </div>
+          </div>
+        </div>
+        <div className="mt-20">
+          <Button content="View All" bgcolor="bg-white"></Button>
         </div>
       </section>
     </>
