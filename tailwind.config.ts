@@ -18,6 +18,10 @@ const config = {
       },
     },
     extend: {
+         fontFamily: {
+        myFont: ['var(--font-myFont)'],
+      },
+
       colors: {
         lightGreen: "#D3F985",
       lightGray: "#F1F1F1",

@@ -7,7 +7,12 @@ import localFont from "next/font/local";
 import Footer from "@/app/components/footer";
 
 // Font files can be colocated inside of `pages`
-const myFont = localFont({ src: "./GeneralSans-Regular.woff2" });
+//const myFont = localFont({ src: "./GeneralSans-Regular.woff2" });
+
+const myFont = localFont({
+  src: "./GeneralSans-Regular.woff2",
+  variable: "--font-myFont",
+});
 
 export const metadata: Metadata = {
   title: "Cowork",
@@ -22,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={myFont.className}>
+    <html lang="en" className={`${myFont.variable} font-myFont`}>
       <body>
         <Header />
         {children}

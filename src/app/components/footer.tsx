@@ -16,9 +16,9 @@ const Footer = () => {
               alt="logo"
             />
           </Link>
-          <p>
+          <h3>
             Join our newsletter to stay up to date on features and releases.
-          </p>
+          </h3>
           <div className="flex flex-row gap-4 w-full">
             <div className="flex flex-col gap-4 w-full">
               <input

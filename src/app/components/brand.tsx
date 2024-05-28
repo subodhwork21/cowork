@@ -5,7 +5,7 @@ const BrandPage = () => {
     <>
       <div className="flex flex-col items-center justify-center gap-6 py-20 px-16">
         <p>Trusted by Leading Companies</p>
-        <div className="flex flex-row items-center justify-between gap-16">
+        <div className="flex flex-row items-center justify-between gap-16 flex-wrap">
           <Image
             src={"/logos/logo1.png"}
             alt="logo1"
