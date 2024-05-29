@@ -28,7 +28,7 @@ const page = () => {
         <div className="grid grid-cols-3 items-start justify-between w-full md:gap-0 gap-8">
           <div className="col-span-3 lg:col-span-1 w-full  flex flex-col justify-center items-center gap-4">
             <Image
-              src={"/logos/planet.png"}
+              src={"/logos/Planet.png"}
               alt="planet"
               width={48}
               height={48}
