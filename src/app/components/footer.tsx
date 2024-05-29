@@ -5,7 +5,7 @@ import Button from "./button";
 const Footer = () => {
   return (
     <>
-      <section className="lg:px-16 py-16 w-full px-5">
+      <section className="lg:px-16 py-16 w-full px-5 max-w-[1440px] mx-auto">
         <div className="w-full grid grid-cols-2 bg-black text-white px-12 py-12 rounded-[50px] gap-16">
           <div className="flex flex-col justify-center items-start gap-4 lg:col-span-1 col-span-2 lg:pr-12 pr-0">
             <Link href={"/"}>

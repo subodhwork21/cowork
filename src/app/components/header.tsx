@@ -13,9 +13,9 @@ const Header = () => {
     setNav(!nav);
   };
   return (
-    <section className="max-w-full font-regularSans relative ">
+    <section className="max-w-[1440px] mx-auto font-regularSans relative ">
       <nav
-        className={`flex md:px-16 px-8 py-4  flex-row justify-between items-center md:bg-white md:w-auto md:static z-20`}
+        className={`flex md:px-16 px-8 py-4 flex-row justify-between items-center md:bg-white md:w-auto md:static z-20`}
       >
         <div className={`font-extrabold z-10`}>
           <Link href={"/"}>

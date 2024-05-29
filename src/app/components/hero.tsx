@@ -2,7 +2,7 @@ import Image from "next/image";
 import Button from "@/app/components/button";
 const HeroPage = () => {
   return (
-    <div className="flex lg:flex-row flex-col w-full items-center justify-between md:py-28 py-4 md:px-16 px-5">
+    <div className="flex lg:flex-row flex-col w-full items-center justify-center md:py-28 py-4 md:px-16 px-5 max-w-[1440px] mx-auto">
       <div className="lg:w-[50%] w-full flex flex-col lg:items-start lg:justify-start items-center justify-center lg:mb-none mb-12">
         <h1 className="lg:text-[96px] lg:leading-[100px] font-bold mb-8 md:text-[50px] text-[48px] lg:text-left text-center leading-[60px]">
           Elevate Your Workspace with Cowork

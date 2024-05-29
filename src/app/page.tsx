@@ -21,7 +21,7 @@ const page = () => {
     <>
       <HeroPage />
       <BrandPage />
-      <div className="py-28 md:px-16 px-8 flex flex-col items-center justify-center gap-6">
+      <div className="py-28 md:px-16 px-8 flex flex-col items-center justify-center gap-6 max-w-[1440px] mx-auto">
         <h2 className="lg:text-[48px] md: font-bold md:text-[35px] text-[24px]">
           Why Choose Cowork?
         </h2>
@@ -110,7 +110,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className="mt-20 w-full grid grid-cols-2 items-center justify-between md:px-16 md:gap-4 gap-10 py-28 px-8">
+        <div className="max-w-[1440px] mx-auto mt-20 w-full grid grid-cols-2 items-center justify-between md:px-16 md:gap-4 gap-10 py-28 px-8">
           <div className="md:col-span-1 col-span-2">
             <p className="text-[12px] mb-4 uppercase font-bold md:text-left text-center">
               Cowork in Numbers
@@ -148,7 +148,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className="md:px-16 py-28 px-5 w-full flex-col">
+        <div className="md:px-16 py-28 px-5 w-full flex-col max-w-[1440px] mx-auto">
           <p className="text-[12px] w-full text-center font-bold uppercase">
             Cowork in Words
           </p>
@@ -380,7 +380,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="md:px-16 px-8 py-16 grid grid-cols-5 gap-16">
+        <div className="md:px-16 px-8 py-16 grid grid-cols-5 gap-16 max-w-[1440px] mx-auto">
           <div className="xl:col-span-2 col-span-5">
             <p className="text-[12px] font-bold md:text-left text-center mb-4 uppercase">
               Frequently Asked Questions
@@ -469,7 +469,7 @@ const page = () => {
             </Accordion>
           </div>
         </div>
-        <div className="w-full flex flex-col items-center justify-center gap-6 md:px-16 py-[16px] px-5">
+        <div className="max-w-[1440px] mx-auto flex flex-col items-center justify-center gap-6 md:px-16 py-[16px] px-5">
           <span>-</span>
           <p className="lg:text-[96px] text-[48px] md:text-[65px] text-center font-bold md:leading-[100px] leading-[60px] mb-6">
             Seize The Moment – Join Cowork Today!{" "}
@@ -493,7 +493,7 @@ const page = () => {
           </p>
         </div>
 
-        <div className="w-full flex lg:flex-row flex-col justify-center items-center lg:gap-4 lg:px-16 px-8 gap-10">
+        <div className="max-w-[1440px] flex lg:flex-row flex-col justify-center items-center lg:gap-4 lg:px-16 px-8 gap-10">
           <div className="">
             <Image
               className="rounded-3xl"
