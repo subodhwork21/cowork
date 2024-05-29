@@ -110,7 +110,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className="mt-20 grid grid-cols-2 items-center justify-center md:px-16 md:gap-4 gap-10 py-28 px-8">
+        <div className="mt-20 w-full grid grid-cols-2 items-center justify-between md:px-16 md:gap-4 gap-10 py-28 px-8">
           <div className="md:col-span-1 col-span-2">
             <p className="text-[12px] mb-4 uppercase font-bold md:text-left text-center">
               Cowork in Numbers
@@ -137,13 +137,15 @@ const page = () => {
               </div>
             </div>
           </div>
-          <Image
-            className="md:col-span-1 col-span-2"
-            src={"/images/statImage.png"}
-            alt="statImage"
-            width={616}
-            height={640}
-          ></Image>
+          <div className="flex justify-end items-center md:col-span-1 col-span-2">
+            <Image
+              // className="md:col-span-1 col-span-2"
+              src={"/images/statImage.png"}
+              alt="statImage"
+              width={616}
+              height={640}
+            ></Image>
+          </div>
         </div>
 
         <div className="md:px-16 py-28 px-5 w-full flex-col">
@@ -378,7 +380,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="md:px-28 px-8 py-16 grid grid-cols-5 gap-16">
+        <div className="md:px-16 px-8 py-16 grid grid-cols-5 gap-16">
           <div className="xl:col-span-2 col-span-5">
             <p className="text-[12px] font-bold md:text-left text-center mb-4 uppercase">
               Frequently Asked Questions
