@@ -1,8 +1,14 @@
+"use client";
 import React from "react";
 import HeroPage from "@/app/components/hero";
 import BrandPage from "@/app/components/brand";
 import Image from "next/image";
 import Button from "@/app/components/button";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+
 import {
   Accordion,
   AccordionContent,
@@ -15,45 +21,53 @@ const page = () => {
     <>
       <HeroPage />
       <BrandPage />
-      <div className="py-28 px-16 flex flex-col items-center justify-center gap-6">
-        <p className="text-[48px] font-bold">Why Choose Cowork?</p>
-        <div className="flex flex-row items-center justify-between w-full">
-          <div className="w-full flex flex-col justify-center items-center gap-4">
+      <div className="py-28 md:px-16 px-8 flex flex-col items-center justify-center gap-6">
+        <h2 className="lg:text-[48px] md: font-bold md:text-[35px] text-[24px]">
+          Why Choose Cowork?
+        </h2>
+        <div className="grid grid-cols-3 items-start justify-between w-full md:gap-0 gap-8">
+          <div className="col-span-3 lg:col-span-1 w-full  flex flex-col justify-center items-center gap-4">
             <Image
               src={"/logos/planet.png"}
               alt="planet"
               width={48}
               height={48}
             ></Image>
-            <p className="text-center text-[24px]">Flexible Spaces</p>
+            <p className="text-center lg:text-[24px] text-[16px]">
+              Flexible Spaces
+            </p>
             <p className="text-center">
               Whether you are a solopreneur, startup, or an established
               enterprise, our flexible office solutions cater to your evolving
               needs.
             </p>
           </div>
-          <div className="w-full flex flex-col justify-center items-center gap-4">
+          <div className="w-full col-span-3  lg:col-span-1 flex flex-col justify-center items-center gap-4">
             <Image
               src={"/logos/CreditCard.png"}
               alt="credit_card"
               width={48}
               height={48}
             ></Image>
-            <p className="text-center text-[24px]">Transparent Pricing</p>
+            <p className="text-center lg:text-[24px] text-[16px]">
+              Transparent Pricing
+            </p>
             <p className="text-center">
               Choose a plan that suits your budget and business objectives, and
               experience the value of a premium coworking space without breaking
               the bank.
             </p>
           </div>
-          <div className="w-full flex flex-col justify-center items-center gap-4">
+          <div className="w-full col-span-3 lg:col-span-1 flex flex-col justify-center items-center gap-4">
             <Image
               src={"/logos/UserList.png"}
               alt="user_list"
               width={48}
               height={48}
             ></Image>
-            <p className="text-center text-[24px]">Tailored Memberships</p>
+            <p className="text-center lg:text-[24px] text-[16px]">
+              Tailored Memberships
+            </p>
             <p className="text-center">
               Whether you prefer the flexibility of a hot desk or the
               exclusivity of a private office, Cowork offers tailored solutions
@@ -63,11 +77,13 @@ const page = () => {
         </div>
       </div>
       <section className="w-full flex flex-col items-center justify-center">
-        <div className="max-w-[768px] w-full flex flex-col items-center justify-center gap-4">
+        <div className="max-w-[768px] w-full flex flex-col items-center justify-center gap-4 md:px-0 px-[20px]">
           <span>-</span>
-          <p className="text-[12px] font-bold">A Virtual Tour</p>
-          <p className="text-[48px]">Explore Cowork Through Our Lens</p>
-          <p className="text-center text-[13px]">
+          <p className="text-[12px] font-bold uppercase">A Virtual Tour</p>
+          <p className="lg:text-[48px] md:text-[35px] text-[24px] text-center font-bold">
+            Explore Cowork Through Our Lens
+          </p>
+          <p className="text-center text-[16px] md:text-[13px] mb-8">
             Experience the essence of Cowork before setting foot in our dynamic
             spaces. Our immersive video tour gives you a sneak peek into the
             vibrant atmosphere, cutting-edge facilities, and collaborative
@@ -76,8 +92,9 @@ const page = () => {
           <Button content="Explore Spaces" bgcolor="bg-white" />
         </div>
 
-        <div className="mt-20 relative">
+        <div className="mt-20 relative px-5">
           <Image
+            className="md:w-[1312px] md:h-[700px] w-full h-[320px]"
             src={"/images/Image.png"}
             width={1312}
             height={700}
@@ -93,32 +110,35 @@ const page = () => {
           </div>
         </div>
 
-        <div className="mt-20 flex flex-row items-center justify-center px-16 gap-4 py-28">
-          <div>
-            <p className="text-[12px] uppercase">Cowork in Numbers</p>
-            <p className="text-[48px] font-bold">
+        <div className="mt-20 grid grid-cols-2 items-center justify-center md:px-16 md:gap-4 gap-10 py-28 px-8">
+          <div className="md:col-span-1 col-span-2">
+            <p className="text-[12px] mb-4 uppercase font-bold md:text-left text-center">
+              Cowork in Numbers
+            </p>
+            <p className="lg:text-[48px] font-bold md:text-[35px] text-[24px] md:text-left text-center">
               Transformative Statistics That Speak Volumes
             </p>
-            <div className="grid grid-cols-2 gap-4 mt-10">
-              <div>
+            <div className="grid grid-cols-2 gap-4 mt-8 items-end">
+              <div className="flex md:items-start justify-center flex-col items-center">
                 <p className="text-[48px] font-bold">240%</p>
                 <p>Community Growth</p>
               </div>
-              <div>
+              <div className="flex md:items-start justify-center flex-col items-center">
                 <p className="text-[48px] font-bold">99%</p>
                 <p> Technology Uptime </p>
               </div>
-              <div>
+              <div className="flex md:items-start justify-center flex-col items-center">
                 <p className="text-[48px] font-bold">50%</p>
                 <p>Happy Members</p>
               </div>
-              <div>
+              <div className="flex md:items-start justify-center flex-col items-center">
                 <p className="text-[48px] font-bold">100%</p>
                 <p>Renewable Energy Sources</p>
               </div>
             </div>
           </div>
           <Image
+            className="md:col-span-1 col-span-2"
             src={"/images/statImage.png"}
             alt="statImage"
             width={616}
@@ -126,13 +146,134 @@ const page = () => {
           ></Image>
         </div>
 
-        <div className="px-16 py-28">
-          <p className="text-[12px] w-100 text-center">Cowork in Words</p>
-          <p className="text-[48px] w-100 text-center">
+        <div className="md:px-8 py-28 px-16 w-full">
+          <p className="text-[12px] w-full text-center font-bold uppercase">
+            Cowork in Words
+          </p>
+          <p className="md:text-[48px] text-[24px] w-full text-center font-bold">
             Hear It from Our Clients
           </p>
-          <div className="flex flex-row justify-between items-center gap-16 mt-10 px-[88px] ">
-            <div className="py-8 px-8 gap-6 flex flex-col justify-center items-center bg-lightGreen rounded-[24px] flex-1">
+          <div className="md:hidden block mt-[72px]">
+            <Swiper
+              spaceBetween={50}
+              slidesPerView={1}
+              // onSlideChange={() => console.log("slide change")}
+              // onSwiper={(swiper) => console.log(swiper)}
+            >
+              <SwiperSlide>
+                <div className="lg:col-span-1 min-w-[360px] col-span-3 py-8 px-8 gap-6 flex flex-col justify-center items-center bg-lightGreen rounded-[24px]">
+                  <Image
+                    className="rounded-full aspect-square object-cover object-right-top"
+                    src={"/images/person1.avif"}
+                    width={56}
+                    height={56}
+                    alt="person1"
+                  ></Image>
+                  <p className="text-left">
+                    The 24/7 access and secure facilities have been incredibly
+                    convenient for my teams flexible schedules. We love the
+                    coworking space
+                  </p>
+                  <div className="w-full">
+                    <p className="text-center font-bold">Liam Brown</p>
+                    <p className="text-center">
+                      Software Engineer, TechStartup Innovations
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="lg:col-span-1 min-w-[360px] col-span-3 py-8 px-8 gap-6 flex flex-col justify-center items-center bg-lightGray rounded-[24px] ">
+                  <Image
+                    className="rounded-full aspect-square object-cover object-right-top"
+                    src={"/images/person2.png"}
+                    width={56}
+                    height={56}
+                    alt="person1"
+                  ></Image>
+                  <p className="text-left">
+                    The aesthetics of Cowork are inspiring. The attention to
+                    detail in the design creates an atmosphere that sparks
+                    creativity. Its a place where ideas flow effortlessly, and
+                    collaboration happens organically.
+                  </p>
+                  <div className="w-full">
+                    <p className="text-center font-bold">Liam Brown</p>
+                    <p className="text-center">
+                      Software Engineer, TechStartup Innovations
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="lg:col-span-1 min-w-[360px] col-span-3 py-8 px-8 gap-6 flex flex-col justify-center items-center bg-skyBlue rounded-[24px]">
+                  <Image
+                    className="rounded-full aspect-square object-cover object-right-top"
+                    src={"/images/person3.avif"}
+                    width={56}
+                    height={56}
+                    alt="person1"
+                  ></Image>
+                  <p className="text-left">
+                    As a freelance designer, I was getting tired of working from
+                    home or coffee shops. The coworking space has provided me
+                    with a productive and professional environment to focus on
+                    my work
+                  </p>
+                  <div className="w-full">
+                    <p className="text-center font-bold">Michael Thompson</p>
+                    <p className="text-center">Graphic Designer, DesignCo</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="py-8 px-8 gap-6 flex flex-col justify-center items-center bg-shinyPink rounded-[24px] min-w-[360px]">
+                  <Image
+                    className="rounded-full aspect-square object-cover object-right-top"
+                    src={"/images/person1.avif"}
+                    width={56}
+                    height={56}
+                    alt="person1"
+                  ></Image>
+                  <p className="text-left">
+                    The coworking space has been a wonderful resource for my
+                    team. The open floor plan and dedicated private offices
+                    allow us to collaborate and concentrate as needed.
+                  </p>
+                  <div className="w-full">
+                    <p className="text-center font-bold">David Wilson</p>
+                    <p className="text-center">
+                      Project Manager, SoftwareSolutions LLC
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="py-8 px-8 gap-6 flex flex-col justify-center items-center bg-lightOrange rounded-[24px] min-w-[360px]">
+                  <Image
+                    className="rounded-full aspect-square object-cover object-right-top"
+                    src={"/images/person2.png"}
+                    width={56}
+                    height={56}
+                    alt="person1"
+                  ></Image>
+                  <p className="text-left">
+                    The flexible membership options and amenities like
+                    high-speed internet, printers, and meeting rooms have made
+                    this coworking space a perfect fit for my small business.
+                  </p>
+                  <div className="w-full">
+                    <p className="text-center font-bold"> Alex Nguyen</p>
+                    <p className="text-center">
+                      Marketing Consultant, Maverick Marketing
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+          <div className="grid-cols-3 justify-between items-center gap-16 mt-10 px-[41px] py-5 lg:py-0 md:grid hidden">
+            <div className="xl:col-span-1 min-w-[360px] col-span-3 py-8 px-8 gap-6 flex flex-col justify-center items-center bg-lightGreen rounded-[24px]">
               <Image
                 className="rounded-full aspect-square object-cover object-right-top"
                 src={"/images/person1.avif"}
@@ -152,7 +293,8 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="py-8 px-8 gap-6 flex flex-col justify-center items-center bg-lightGray rounded-[24px] mb-16  flex-1">
+
+            <div className="xl:col-span-1 min-w-[360px] col-span-3 py-8 px-8 gap-6 flex flex-col justify-center items-center bg-lightGray rounded-[24px] xl:mb-16">
               <Image
                 className="rounded-full aspect-square object-cover object-right-top"
                 src={"/images/person2.png"}
@@ -173,7 +315,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="py-8 px-8 gap-6 flex flex-col justify-center items-center bg-skyBlue rounded-[24px] mt-4 flex-1">
+            <div className="xl:col-span-1 min-w-[360px] col-span-3 py-8 px-8 gap-6 flex flex-col justify-center items-center bg-skyBlue rounded-[24px] xl:mt-4">
               <Image
                 className="rounded-full aspect-square object-cover object-right-top"
                 src={"/images/person3.avif"}
@@ -192,8 +334,8 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-row justify-center items-center gap-16 mt-10 px-[88px] ">
-            <div className="py-8 px-8 gap-6 flex flex-col justify-center items-center bg-shinyPink rounded-[24px] w-[360px]">
+          <div className="grid-cols-2 justify-center items-center gap-16 xl:px-[258px] px-[41px] hidden md:grid xl:mt-0 mt-12">
+            <div className="xl:col-span-1 col-span-2 min-w-[360px] py-8 px-8 gap-6 flex flex-col justify-center items-center bg-shinyPink rounded-[24px] ">
               <Image
                 className="rounded-full aspect-square object-cover object-right-top"
                 src={"/images/person1.avif"}
@@ -213,7 +355,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="py-8 px-8 gap-6 flex flex-col justify-center items-center bg-lightOrange rounded-[24px] mt-16  w-[360px]">
+            <div className="xl:col-span-1 col-span-2 min-w-[360px] py-8 px-8 gap-6 flex flex-col justify-center items-center bg-lightOrange rounded-[24px] mt-16 ">
               <Image
                 className="rounded-full aspect-square object-cover object-right-top"
                 src={"/images/person2.png"}
@@ -235,22 +377,24 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="px-28 py-16 grid grid-cols-5 gap-16">
-          <div className="col-span-2">
-            <p>Frequently Asked Questions</p>
-            <p className="text-[48px] font-bold leading-[50px] py-8">
-              Your Roadmap to Coworking Clarity
+        <div className="md:px-28 px-8 py-16 grid grid-cols-5 gap-16">
+          <div className="xl:col-span-2 col-span-5">
+            <p className="text-[12px] font-bold md:text-left text-center mb-4 uppercase">
+              Frequently Asked Questions
             </p>
-            <p>
+            <h2 className="md:text-[35px] lg:text-[48px] text-[24px] font-bold leading-[50px] py-8 xl:text-left text-center">
+              Your Roadmap to Coworking Clarity
+            </h2>
+            <p className="xl:text-left text-center">
               Frequently asked questions ordered by popularity. Remember that if
               the visitor has not committed to the call to action, they may
               still have questions (doubts) that can be answered.
             </p>
           </div>
-          <div className="col-span-3">
+          <div className="xl:col-span-3 col-span-5">
             <Accordion type="single" collapsible>
               <AccordionItem value="item-1">
-                <AccordionTrigger className="font-bold">
+                <AccordionTrigger className="font-bold text-left">
                   How flexible are Coworks membership plans?
                 </AccordionTrigger>
                 <AccordionContent className="max-w-[400px]">
@@ -261,7 +405,7 @@ const page = () => {
               </AccordionItem>
 
               <AccordionItem value="item-2">
-                <AccordionTrigger className="font-bold">
+                <AccordionTrigger className="font-bold text-left">
                   What kind of events and networking opportunities does Cowork
                   provide?
                 </AccordionTrigger>
@@ -274,7 +418,7 @@ const page = () => {
               </AccordionItem>
 
               <AccordionItem value="item-3">
-                <AccordionTrigger className="font-bold">
+                <AccordionTrigger className="font-bold text-left">
                   Can I tour the Cowork space before committing to a membership?
                 </AccordionTrigger>
                 <AccordionContent className="max-w-[400px]">
@@ -285,7 +429,7 @@ const page = () => {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
-                <AccordionTrigger className="font-bold">
+                <AccordionTrigger className="font-bold text-left">
                   Is Cowork suitable for remote teams and distributed
                   workforces?
                 </AccordionTrigger>
@@ -297,7 +441,7 @@ const page = () => {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
-                <AccordionTrigger className="font-bold">
+                <AccordionTrigger className="font-bold text-left">
                   What measures does Cowork take for environmental
                   sustainability?
                 </AccordionTrigger>
@@ -309,7 +453,7 @@ const page = () => {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-6">
-                <AccordionTrigger className="font-bold">
+                <AccordionTrigger className="font-bold text-left">
                   Still has questions?
                 </AccordionTrigger>
                 <AccordionContent className="max-w-[400px]">
@@ -322,12 +466,12 @@ const page = () => {
             </Accordion>
           </div>
         </div>
-        <div className="w-full flex flex-col items-center justify-center gap-6 px-28 py-[123px]">
+        <div className="w-full flex flex-col items-center justify-center gap-6 md:px-16 py-[16px] px-5">
           <span>-</span>
-          <p className="text-[96px] text-center font-bold leading-[100px]">
+          <p className="lg:text-[96px] text-[48px] md:text-[65px] text-center font-bold md:leading-[100px] leading-[60px] mb-6">
             Seize The Moment – Join Cowork Today!{" "}
           </p>
-          <p className="text-center text-[13px] max-w-[600px]">
+          <p className="text-center text-[13px] lg:px-[336.5px] px-[0px] mb-10">
             Uncover the transformative power of Cowork as echoed by those who
             have made it their professional haven. This is more than finding a
             desk; it is discovering a community that fuels your journey to
@@ -335,9 +479,9 @@ const page = () => {
           </p>
           <Button content="Claim Your Spot" bgcolor="bg-black" />
         </div>
-        <div className="max-w-[600px] w-full flex flex-col items-center justify-center gap-4 py-20 text-center">
-          <p className="text-[12px] font-bold">Cowork Chronicles </p>
-          <p className="text-[48px] font-bold leading-[60px]">
+        <div className="max-w-[600px] w-full flex flex-col items-center justify-center gap-4 py-20 text-center md:px-0 px-5">
+          <p className="text-[12px] font-bold uppercase">Cowork Chronicles </p>
+          <p className="md:text-[48px] text-[24px] font-bold md:leading-[60px] leading-[35px]">
             Insights, Innovation, and Inspiration
           </p>
           <p className="text-center text-[13px] max-w-[480px] ">
@@ -346,8 +490,8 @@ const page = () => {
           </p>
         </div>
 
-        <div className="w-full grid grid-cols-3 gap-4 px-16">
-          <div>
+        <div className="w-full flex lg:flex-row flex-col justify-center items-center lg:gap-4 lg:px-16 px-8 gap-10">
+          <div className="">
             <Image
               className="rounded-3xl"
               src={"/images/laptop.jpg"}
@@ -355,7 +499,7 @@ const page = () => {
               width={416}
               height={300}
             ></Image>
-            <div className="mt-6 flex justify-start items-center gap-4 ">
+            <div className="mt-6 flex justify-start lg:items-center items-left gap-4 w-full">
               <p className="bg-skyBlue font-bold py-[6px] px-[8px] rounded-xl">
                 Trending
               </p>
@@ -374,7 +518,7 @@ const page = () => {
               ></Image>
             </div>
           </div>
-          <div>
+          <div className="">
             <Image
               className="rounded-3xl"
               src={"/images/laptop2.jpg"}
@@ -401,7 +545,7 @@ const page = () => {
               ></Image>
             </div>
           </div>
-          <div>
+          <div className="">
             <Image
               className="rounded-3xl"
               src={"/images/laptop3.jpg"}

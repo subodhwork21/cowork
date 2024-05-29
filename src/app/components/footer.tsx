@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="flex flex-row gap-4 w-full">
             <div className="flex flex-col gap-4 w-full">
               <input
-                className="outline-none focus:outline-none bg-black text-white"
+                className="outline-none focus:outline-none bg-black text-white pb-["
                 type="text"
                 placeholder="Enter your email "
               />
