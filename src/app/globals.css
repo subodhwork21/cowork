@@ -73,8 +73,17 @@
     body {
       @apply bg-background text-foreground;
     }
+    h1{
+      @apply text-[96px] font-bold;
+      @apply font-neueRegular;
+    }
     h2{
       @apply text-[48px] font-bold;
+      @apply font-neueRegular;
+    }
+    h3{
+      @apply text-[24px] font-bold;
+      @apply font-neueRegular;
     }
   }
 

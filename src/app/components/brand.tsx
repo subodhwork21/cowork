@@ -4,7 +4,7 @@ const BrandPage = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center gap-6 py-20 px-16">
-        <p>Trusted by Leading Companies</p>
+        <p className="uppercase">Trusted by Leading Companies</p>
         <div className="grid grid-cols-4 items-center justify-between gap-16">
           <Image
             className="md:col-span-1 col-span-2"

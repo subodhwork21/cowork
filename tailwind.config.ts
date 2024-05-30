@@ -20,6 +20,7 @@ const config = {
     extend: {
          fontFamily: {
         myFont: ['var(--font-myFont)'],
+        neueRegular: ['var(--font-neueRegular)'],
       },
 
       colors: {

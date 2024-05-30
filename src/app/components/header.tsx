@@ -37,7 +37,7 @@ const Header = () => {
           <li className="cursor-pointer">Events</li>
 
           <li className="cursor-pointer md:block hidden">
-            <Button content="Login" bgcolor="bg-white" />
+            <Button content="Log In" bgcolor="bg-white" />
           </li>
           <li className="cursor-pointer md:block hidden">
             <Button content="Sign Up" bgcolor="bg-black" />
@@ -117,11 +117,10 @@ const Header = () => {
             <div className={`font-extrabold z-50 relative top-3`}>
               <Link href={"/"}>
                 <Image
-                  src="/Logo.png"
+                  src="/logos/logowhite.png"
                   width={120}
                   height={24}
                   alt="logo"
-                  className={`${nav ? "md:invert-0 invert" : ""}`}
                 />
               </Link>
             </div>
@@ -134,7 +133,7 @@ const Header = () => {
               <li className="cursor-pointer">Events</li>
 
               <li className="cursor-pointer md:block hidden">
-                <Button content="Login" bgcolor="bg-white" />
+                <Button content="Log In" bgcolor="bg-white" />
               </li>
               <li className="cursor-pointer md:block hidden">
                 <Button content="Sign Up" bgcolor="bg-black" />

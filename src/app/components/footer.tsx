@@ -10,8 +10,7 @@ const Footer = () => {
           <div className="flex flex-col justify-center items-start gap-4 lg:col-span-1 col-span-2 lg:pr-12 pr-0">
             <Link href={"/"}>
               <Image
-                className="invert"
-                src="/Logo.png"
+                src="/logos/logowhite.png"
                 width={120}
                 height={24}
                 alt="logo"

@@ -80,9 +80,9 @@ const page = () => {
         <div className="max-w-[768px] w-full flex flex-col items-center justify-center gap-4 md:px-0 px-[20px]">
           <span>-</span>
           <p className="text-[12px] font-bold uppercase">A Virtual Tour</p>
-          <p className="lg:text-[48px] md:text-[35px] text-[24px] text-center font-bold">
+          <h2 className="lg:text-[48px] md:text-[35px] text-[24px] text-center font-bold">
             Explore Cowork Through Our Lens
-          </p>
+          </h2>
           <p className="text-center text-[16px] md:text-[13px] mb-8">
             Experience the essence of Cowork before setting foot in our dynamic
             spaces. Our immersive video tour gives you a sneak peek into the
@@ -115,9 +115,9 @@ const page = () => {
             <p className="text-[12px] mb-4 uppercase font-bold md:text-left text-center">
               Cowork in Numbers
             </p>
-            <p className="lg:text-[48px] font-bold md:text-[35px] text-[24px] md:text-left text-center">
+            <h2 className="lg:text-[48px] font-bold md:text-[35px] text-[24px] md:text-left text-center">
               Transformative Statistics That Speak Volumes
-            </p>
+            </h2>
             <div className="grid grid-cols-2 gap-4 mt-8 items-end">
               <div className="flex md:items-start justify-center flex-col items-center">
                 <p className="text-[48px] font-bold">240%</p>
@@ -152,9 +152,9 @@ const page = () => {
           <p className="text-[12px] w-full text-center font-bold uppercase">
             Cowork in Words
           </p>
-          <p className="md:text-[48px] text-[24px] w-full text-center font-bold">
+          <h2 className="md:text-[48px] text-[24px] w-full text-center font-bold">
             Hear It from Our Clients
-          </p>
+          </h2>
           <div className="md:hidden mt-[72px] flex justify-center items-center w-full">
             <Swiper
               spaceBetween={50}
@@ -471,9 +471,9 @@ const page = () => {
         </div>
         <div className="max-w-[1440px] mx-auto flex flex-col items-center justify-center gap-6 md:px-16 py-[16px] px-5">
           <span>-</span>
-          <p className="lg:text-[96px] text-[48px] md:text-[65px] text-center font-bold md:leading-[100px] leading-[60px] mb-6">
+          <h1 className="lg:text-[96px] text-[48px] md:text-[65px] text-center font-bold md:leading-[100px] leading-[60px] mb-6">
             Seize The Moment – Join Cowork Today!{" "}
-          </p>
+          </h1>
           <p className="text-center text-[13px] lg:px-[336.5px] px-[0px] mb-10">
             Uncover the transformative power of Cowork as echoed by those who
             have made it their professional haven. This is more than finding a
@@ -484,9 +484,9 @@ const page = () => {
         </div>
         <div className="max-w-[600px] w-full flex flex-col items-center justify-center gap-4 py-20 text-center md:px-0 px-5">
           <p className="text-[12px] font-bold uppercase">Cowork Chronicles </p>
-          <p className="md:text-[48px] text-[24px] font-bold md:leading-[60px] leading-[35px]">
+          <h2 className="md:text-[48px] text-[24px] font-bold md:leading-[60px] leading-[35px]">
             Insights, Innovation, and Inspiration
-          </p>
+          </h2>
           <p className="text-center text-[13px] max-w-[480px] ">
             Stay updated on the latest trends in coworking, productivity tips,
             and success stories that define the Cowork experience.
@@ -508,9 +508,9 @@ const page = () => {
               </p>
               <p>7 min read</p>
             </div>
-            <p className="mt-6 text-[24px] font-bold">
+            <h3 className="mt-6 text-[24px] font-bold">
               Navigating the Future: Trends in Modern Coworking Spaces
-            </p>
+            </h3>
             <div className="mt-8 flex justify-start items-center gap-2">
               <p>Read more</p>
               <Image
@@ -535,9 +535,9 @@ const page = () => {
               </p>
               <p>5 min read</p>
             </div>
-            <p className="mt-6 text-[24px] font-bold">
+            <h3 className="mt-6 text-[24px] font-bold">
               Mastering Productivity: Tips from Cowork High Achievers
-            </p>
+            </h3>
             <div className="mt-8 flex justify-start items-center gap-2">
               <p>Read more</p>
               <Image
@@ -562,9 +562,9 @@ const page = () => {
               </p>
               <p>10 min read</p>
             </div>
-            <p className="mt-6 text-[24px] font-bold">
+            <h3 className="mt-6 text-[24px] font-bold">
               Tech Talk: The Backbone of Cowork Seamless Experience
-            </p>
+            </h3>
             <div className="mt-8 flex justify-start items-center gap-2">
               <p>Read more</p>
               <Image
