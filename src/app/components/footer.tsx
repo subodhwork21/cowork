@@ -16,9 +16,9 @@ const Footer = () => {
                 alt="logo"
               />
             </Link>
-            <h3 className="w-full sm:text-left text-center">
+            <p className="w-full sm:text-left text-center">
               Join our newsletter to stay up to date on features and releases.
-            </h3>
+            </p>
             <div className="flex lg:flex-row gap-4 w-full flex-col">
               <div className="flex flex-col gap-4 w-full">
                 <input
@@ -40,7 +40,7 @@ const Footer = () => {
           <div className="grid grid-cols-3 lg:col-span-1 col-span-2 lg:gap-0 gap-12">
             <div className="flex flex-col items-center lg:items-start  gap-4 w-full lg:col-span-1 col-span-3">
               <Link href={""}>
-                <p className="uppercase font-bold">Explore More</p>
+                <p className="uppercase font-bold text-[12px]">Explore More</p>
               </Link>
               <Link href={""}>
                 <p className="">Home</p>
@@ -61,7 +61,9 @@ const Footer = () => {
 
             <div className="flex flex-col items-center lg:items-start gap-4 w-full lg:col-span-1 col-span-3">
               <Link href={""}>
-                <p className="uppercase font-bold">Stay Connected</p>
+                <p className="uppercase font-bold text-[12px]">
+                  Stay Connected
+                </p>
               </Link>
               <Link href={""}>
                 <p>Subscribe</p>
@@ -78,7 +80,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col items-center lg:items-start gap-4 w-full lg:col-span-1 col-span-3">
               <Link href={""}>
-                <p className="uppercase font-bold">Follow Us</p>
+                <p className="uppercase font-bold text-[12px]">Follow Us</p>
               </Link>
               <Link href={""}>
                 <p>Facebook</p>

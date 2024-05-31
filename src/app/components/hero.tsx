@@ -18,7 +18,7 @@ const HeroPage = () => {
             </span>
           </span>
         </h1>
-        <p className="lg:max-w-[480px] w-full lg:mb-8 mb-12 lg:leading-[30px] leading-[40px] text-center lg:text-left">
+        <p className="lg:max-w-[480px] w-full lg:mb-8 mb-12 lg:leading-[30px] leading-[25px] text-center lg:text-left text-[14px]">
           Welcome to Cowork – where innovation meets collaboration in the heart
           of productivity! Unleash 🚀 your potential in our thoughtfully
           designed coworking spaces, tailored to inspire creativity and foster

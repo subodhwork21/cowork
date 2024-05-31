@@ -397,7 +397,7 @@ const page = () => {
           <div className="xl:col-span-3 col-span-5">
             <Accordion type="single" collapsible>
               <AccordionItem value="item-1">
-                <AccordionTrigger className="font-bold text-left">
+                <AccordionTrigger className="font-bold text-left text-[14px] font-sans">
                   How flexible are Coworks membership plans?
                 </AccordionTrigger>
                 <AccordionContent className="max-w-[400px]">
@@ -408,7 +408,7 @@ const page = () => {
               </AccordionItem>
 
               <AccordionItem value="item-2">
-                <AccordionTrigger className="font-bold text-left">
+                <AccordionTrigger className="font-bold text-left text-[14px] font-sans">
                   What kind of events and networking opportunities does Cowork
                   provide?
                 </AccordionTrigger>
@@ -421,7 +421,7 @@ const page = () => {
               </AccordionItem>
 
               <AccordionItem value="item-3">
-                <AccordionTrigger className="font-bold text-left">
+                <AccordionTrigger className="font-bold text-left text-[14px] font-sans">
                   Can I tour the Cowork space before committing to a membership?
                 </AccordionTrigger>
                 <AccordionContent className="max-w-[400px]">
@@ -432,7 +432,7 @@ const page = () => {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
-                <AccordionTrigger className="font-bold text-left">
+                <AccordionTrigger className="font-bold text-left text-[14px] font-sans">
                   Is Cowork suitable for remote teams and distributed
                   workforces?
                 </AccordionTrigger>
@@ -444,7 +444,7 @@ const page = () => {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
-                <AccordionTrigger className="font-bold text-left">
+                <AccordionTrigger className="font-bold text-left text-[14px] font-sans">
                   What measures does Cowork take for environmental
                   sustainability?
                 </AccordionTrigger>
@@ -456,7 +456,7 @@ const page = () => {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-6">
-                <AccordionTrigger className="font-bold text-left">
+                <AccordionTrigger className="font-bold text-left text-[14px] font-sans">
                   Still has questions?
                 </AccordionTrigger>
                 <AccordionContent className="max-w-[400px]">
