@@ -7,8 +7,8 @@ const HeroPage = () => {
         <h1 className="lg:text-[96px] lg:leading-[100px] font-bold mb-8 md:text-[50px] text-[48px] lg:text-left text-center leading-[60px]">
           Elevate Your Workspace with{" "}
           <span className="relative">
-            Cowork
-            <span className="absolute -top-5 left-0">
+            <span className="relative z-20">Cowork</span>
+            <span className="absolute -top-5 left-0 z-10">
               <Image
                 src={"/items/circle.png"}
                 alt="circle"

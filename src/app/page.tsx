@@ -164,7 +164,7 @@ const page = () => {
               // onSwiper={(swiper) => console.log(swiper)}
             >
               <SwiperSlide>
-                <div className="lg:col-span-1 w-[360px] col-span-3 py-8 px-8 gap-6 flex flex-col justify-center items-center bg-lightGreen rounded-[24px]">
+                <div className="lg:col-span-1 max-w-[404px] col-span-3 py-8 px-8 gap-6 flex flex-col justify-center items-center bg-lightGreen rounded-[24px]">
                   <Image
                     className="rounded-full aspect-square object-cover object-right-top"
                     src={"/images/person1.avif"}
@@ -186,7 +186,7 @@ const page = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="lg:col-span-1 w-[360px] col-span-3 py-8 px-8 gap-6 flex flex-col justify-center items-center bg-lightGray rounded-[24px] ">
+                <div className="lg:col-span-1 max-w-[404px] col-span-3 py-8 px-8 gap-6 flex flex-col justify-center items-center bg-lightGray rounded-[24px] ">
                   <Image
                     className="rounded-full aspect-square object-cover object-right-top"
                     src={"/images/person2.png"}
@@ -209,7 +209,7 @@ const page = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="lg:col-span-1 w-[360px] col-span-3 py-8 px-8 gap-6 flex flex-col justify-center items-center bg-skyBlue rounded-[24px]">
+                <div className="lg:col-span-1 max-w-[404px] col-span-3 py-8 px-8 gap-6 flex flex-col justify-center items-center bg-skyBlue rounded-[24px]">
                   <Image
                     className="rounded-full aspect-square object-cover object-right-top"
                     src={"/images/person3.avif"}
@@ -230,7 +230,7 @@ const page = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="py-8 px-8 gap-6 flex flex-col justify-center items-center bg-shinyPink rounded-[24px] w-[360px]">
+                <div className="py-8 px-8 gap-6 flex flex-col justify-center items-center bg-shinyPink rounded-[24px] max-w-[404px]">
                   <Image
                     className="rounded-full aspect-square object-cover object-right-top"
                     src={"/images/person1.avif"}
@@ -252,7 +252,7 @@ const page = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="py-8 px-8 gap-6 flex flex-col justify-center items-center bg-lightOrange rounded-[24px] w-[360px]">
+                <div className="py-8 px-8 gap-6 flex flex-col justify-center items-center bg-lightOrange rounded-[24px] max-w-[404px]">
                   <Image
                     className="rounded-full aspect-square object-cover object-right-top"
                     src={"/images/person2.png"}
