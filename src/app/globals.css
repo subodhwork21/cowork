@@ -78,11 +78,19 @@
       @apply font-neueRegular;
     }
     h2{
-      @apply text-[48px] font-bold;
+      @apply text-[96px] font-bold;
       @apply font-neueRegular;
     }
     h3{
+      @apply text-[48px] font-bold;
+      @apply font-neueRegular;
+    }
+    h4{
       @apply text-[24px] font-bold;
+      @apply font-neueRegular;
+    }
+    h5{
+      @apply text-[16px] font-bold;
       @apply font-neueRegular;
     }
   }
