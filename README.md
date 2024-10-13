@@ -6,6 +6,13 @@
 
 For this project, I handled the front-end development based on a design sourced online. My primary role was to bring the design to life by coding the layout and styling, ensuring that the interface is both clean and responsive. The site is intended to give users easy access to workspace details while providing an elegant and efficient browsing experience.
 
+
+### Design Reference
+
+The design used in this project was sourced from a publicly available Figma file and does not belong to me. You can find the original design [here](https://www.figma.com/design/M3skpBb1PFdDWKn2wFlmJS/Cowork---Coworking-Space-Company-(Community)?node-id=0-1&node-type=canvas&t=1cCxdYCw0XyJ5xmt-0).
+
+
+
 ## Features
 
 - **Single-Page Design**: Provides all necessary information about coworking spaces in one easy-to-navigate page.
